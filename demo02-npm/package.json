@@ -1,0 +1,17 @@
+{
+  "name": "demo02-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo '哈哈哈'",
+    "dev": "node main.js",
+    "build": "echo '正在打包...'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
