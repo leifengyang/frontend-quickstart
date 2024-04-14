@@ -25,7 +25,7 @@ http.interceptors.response.use(function (response) {
     // 超出 2xx 范围的状态码都会触发该函数。
     // 对响应错误做点什么
     console.log("响应错误",error)
-    message.error("服务器错误"+error.message)
+    message.error("服务器错误："+error.message)
     return Promise.reject(error);
 });
 

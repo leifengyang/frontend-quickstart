@@ -1,6 +1,5 @@
 // 1、let
 // var a = 1;
-let b = 1;
 //====1.1 越域
 // {
 //     var a = 1;
@@ -113,9 +112,11 @@ let url = "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can
 console.log(1)
 // Promise
 let promise = fetch(url); //网络 3s
+   
+
 promise.then(resp => {
-    // console.log("响应数据",resp)
-    resp.json().then(data => {
+    console.log("响应数据",resp)
+     resp.json().then(data => {
         console.log(data)
     })
 })
@@ -123,6 +124,8 @@ promise.then(resp => {
 promise.catch(err => {
     console.log("远程抓取失败", err)
 })
+
+
 console.log(2)
 
 // promise.then();   // 操作成功以后
@@ -183,8 +186,8 @@ async function fetchProducts() {
     let promise1 = await  fetch(url);
     let promise2 = await promise1.json();
     console.log('promise2',promise2)
-    
 }
+
 fetchProducts();
 // 10、模块化
 
